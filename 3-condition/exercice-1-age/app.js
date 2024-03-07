@@ -1,9 +1,17 @@
-let annee = 2024;
-console.log(typeof annee);
+let age = Number(prompt("Quel est votre âge chèr.e individu ?"));
 
-// Résultat attendu dans la console :
-// number
-// string
+if (age < 18) 
+{
+      document.write("Vous êtes fortement mineur !");      
+}
+else{
+      document.write("Vous êtes probablement majeur !");      
+}
 
-annee = toString(annee);
-console.log(typeof annee);
+// Résultat attendu dans la console, si l'âge < 18 :
+
+// Vous êtes mineur.
+
+// Résultat attendu dans la console, si l'âge >= 18 :
+
+// Vous êtes majeur.

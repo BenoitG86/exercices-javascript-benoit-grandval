@@ -1,20 +1,45 @@
-let number1 = Number(prompt("Indiquez un chiffre"));
-let number2 = Number(prompt("Quel est deuxième chiffre chèr.e individu ?"));
+let yourGrade = Number(prompt("Quelle est votre note, est-elle bonne, nous le verrons après la suite !"));
 
-if (number1 < number2) {
-      document.write(`Votre ${number1} est assez clairement inférieur à ${number2}`);      
-}
-else if (number1 == number2){
-      document.write(`Votre ${number1} est assez similaire à ${number2}`);      
-}
-else {
-      document.write(`Votre ${number1} est assez certainement supérieur à ${number2}`);      
-}
+// if (yourGrade < 12) {
+//       document.write(`Pas de mention`);
+// } else if (yourGrade < 14) {
+//       document.write(`Passable`);
+// } else if (yourGrade < 16) {
+//       document.write(`Bien`);
+// } else if (yourGrade < 18) {
+//       document.write(`Très bien`);
+// } else if (yourGrade < 20) {
+//       document.write(`Excellent`);
+// } else if (yourGrade === 20) {
+//       document.write(`Extraordinaire`);
+// } else {
+//       document.write(`Extraordinaire..ment pas une valeur correcte`);
+// }
 
-// Exemples de résultats attendus dans la console :
+document.write(
+      (yourGrade < 12 ? 'Pas de mention'
+      : yourGrade < 14 ? 'Passable'
+      : yourGrade < 16 ? 'Très bien'
+      : yourGrade < 18 ? 'Excellent'
+      : yourGrade === 20 ? 'Extraordinaire'
+      : 'erreur')
+);
+/* Résultat attendu dans la console :
 
-// Le nombre 1 est plus grand que le nombre 2
+pour une note < 12
+Pas de mention
 
-// Le nombre 1 est plus petit que le nombre 2
+Pour 12 et +
+Passable
 
-// Les deux nombres sont égaux
+Pour 14 et +
+Bien
+
+Pour 16 et +
+Très bien
+
+Pour 18 et +
+Excellent
+
+Pour 20
+Extraordinaire */

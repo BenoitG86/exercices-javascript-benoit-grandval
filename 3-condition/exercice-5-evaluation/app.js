@@ -22,7 +22,7 @@ document.write(
       : yourGrade < 16 ? 'Très bien'
       : yourGrade < 18 ? 'Excellent'
       : yourGrade === 20 ? 'Extraordinaire'
-      : 'erreur')
+      : 'Vous vous êtes gourés quelque part.')
 );
 /* Résultat attendu dans la console :
 

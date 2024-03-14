@@ -1,4 +1,4 @@
-let answer = prompt("Aimez-vous le javascript ?")
+let answer = '';
 
 while (answer !== 'oui') {
       answer = prompt("Aimez-vous le javascript ?");

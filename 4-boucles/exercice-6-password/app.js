@@ -1,12 +1,20 @@
-let mot = prompt("Insérez un mot de votre choix ( mais pas de vulgarité SVP! ) :")
+const PASSWORD = 1234;
+let guessPassword = prompt(`Essayez de deviner le mot de passe qui n'est pas : ${PASSWORD}`);
 
-for (let index = 0; index < mot.length; index++) {
-      document.write(`${mot[index]} <br>`);
+while (guessPassword !== PASSWORD){
+      alert(`Mot de passe incorrect, essayez à nouveau ! Indice : ${PASSWORD}, et non pas ${guessPassword}`);
+      guessPassword = prompt(`Essayez à nouveau de trouver le mot de passe qui n'est pas DU TOUT ${PASSWORD}`);
 }
 
-/* Résultat attendu pour le mot "html", dans la console :
 
-h
-t
-m
-l */
+
+
+// Exemple de déroulement :
+
+// "Veuillez entrer le mot de passe :"
+
+// Si incorrect, résultat attendu dans la console : 
+// Mot de passe incorrect, essayez à nouveau.
+
+// Si correct, résultat attendu dans la console : 
+// Accès autorisé.

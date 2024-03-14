@@ -1,14 +1,20 @@
-let index = 5;
+// let index = 5;
 
-do {
+// do {
+//       document.write(`${index} <br>`);
+//       index--;
+//       if (index === 0) {
+//             document.write(`Décollage !!! 🚀`);
+//             break;
+//       }
+
+// } while (index > 0);
+
+for (let index = 5; index > 0; index--) {
       document.write(`${index} <br>`);
-      index--;
-      if (index === 0) {
-            document.write(`Décollage !!! 🚀`);
-            break;
-      }
+}
+document.write(`Décollage !!! 🚀`);
 
-} while (index > 0);
 
 // Résultat attendu dans la console :
 

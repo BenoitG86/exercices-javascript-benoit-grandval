@@ -1,11 +1,21 @@
 let mot = prompt("Insérez un mot de votre choix ( mais pas de vulgarité SVP! ) :")
+let phrase = '';
+
+// for (let index = 0; index < mot.length; index++) {
+//       document.write(`${mot[index]}`);
+//       if (index < (mot.length-1)) {
+//             document.write(`-`);
+//       }
+// }
 
 for (let index = 0; index < mot.length; index++) {
-      document.write(`${mot[index]}`);
+      phrase += mot[index];
       if (index < (mot.length-1)) {
-            document.write(`-`);
+            phrase += `-`;
       }
 }
+document.write(phrase);
+
 
 
 /* 

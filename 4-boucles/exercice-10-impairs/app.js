@@ -1,16 +1,20 @@
 let nombre = parseInt(prompt('Choissisez un nombre au choix'));
+let startingNombre = 1;
 
-while (condition) {
-      let calcul = multiple*index;
-      document.write(calcul + '<br>');
+while (startingNombre < nombre) {
+      startingNombre += 2;
+      if (startingNombre > nombre){
+            break;
+      }
+      document.write(startingNombre + '<br>');
       
 }
 
 
-// Résultat attendu dans la console :
+// Résultat dans la console pour N = 10 :
 
-// 0
+// 1
 // 3
-// 6
-// ...
-// 30
+// 5
+// 7
+// 9

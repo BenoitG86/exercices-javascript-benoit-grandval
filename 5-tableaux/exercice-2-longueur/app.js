@@ -1,8 +1,11 @@
 const couleurs = ['bleu', 'rouge', 'vert', 'jaune']
 
 document.write(couleurs.length);
-couleurs =+ ['violet' , 'blouge'];
+couleurs.push('violet' , 'blouge');
+console.table(couleurs);
+
 document.write(couleurs.length);
+
 
 /* 
 Créez un tableau contenant plusieurs couleurs. 
